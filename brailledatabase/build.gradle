@@ -1,7 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
+
 group = 'com.github.poseiso'
+
 android {
     namespace = "com.lukeneedham.brailledatabase"
     compileSdk 33
@@ -25,12 +27,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget=11
-    }
-    lint {
-        baseline = file("lint-baseline.xml")
-    }
 }
 
 dependencies {
@@ -49,7 +45,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.poseiso'
             artifactId = 'VUKeys-Database'
-            version = '1.0.21'
+            version = '1.0.22'
             artifact("$buildDir/outputs/aar/brailledatabase-release.aar")
         }
     }
