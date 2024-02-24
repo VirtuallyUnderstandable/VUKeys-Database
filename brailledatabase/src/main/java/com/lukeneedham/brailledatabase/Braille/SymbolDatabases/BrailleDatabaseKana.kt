@@ -9,15 +9,30 @@ import com.lukeneedham.brailledatabase.Braille.DictionaryType.*
 import com.lukeneedham.brailledatabase.R
 import com.lukeneedham.brailledatabase.Braille.BrailleSymbolModifierType.*
 
-class BrailleDatabaseKana : BrailleDatabase()
-{
+class BrailleDatabaseKana : BrailleDatabase() {
     override val dictionaryCategories =
-            listOf(DictionaryCategory(R.string.symbol_letter, 0, "A", LETTER),
-                    DictionaryCategory(R.string.symbol_number, 4, "1", NUMBER),
-                    DictionaryCategory(R.string.symbol_punctuation, 6, "?", PUNCTUATION),
-                    DictionaryCategory(R.string.category_contractions, 8, "~", GROUPSIGN, WORDSIGN).setTranslateToggle(true),
-                    DictionaryCategory(R.string.category_advancedcontractions, 12, "~+", INITIALLETTERCONTRACTION, FINALLETTERCONTRACTION).setTranslateToggle(true),
-                    DictionaryCategory(R.string.symbol_shortform, 15, "…", SHORTFORM).setTranslateToggle(true))
+        listOf(
+            DictionaryCategory(R.string.symbol_letter, 0, "A", LETTER),
+            DictionaryCategory(R.string.symbol_number, 4, "1", NUMBER),
+            DictionaryCategory(R.string.symbol_punctuation, 6, "?", PUNCTUATION),
+            DictionaryCategory(
+                R.string.category_contractions,
+                8,
+                "~",
+                GROUPSIGN,
+                WORDSIGN
+            ).setTranslateToggle(true),
+            DictionaryCategory(
+                R.string.category_advancedcontractions,
+                12,
+                "~+",
+                INITIALLETTERCONTRACTION,
+                FINALLETTERCONTRACTION
+            ).setTranslateToggle(true),
+            DictionaryCategory(R.string.symbol_shortform, 15, "…", SHORTFORM).setTranslateToggle(
+                true
+            )
+        )
 
     override val challengeSymbolTypes = listOf(LETTER)
 
@@ -27,185 +42,339 @@ class BrailleDatabaseKana : BrailleDatabase()
 
     override val symbols = entries {
         symbol {
-            textRepresented = "a"
+            textRepresented = "あ"
             dictionaryType = LETTER
             cells {
                 +Cell1
             }
         }
         symbol {
-            textRepresented = "b"
+            textRepresented = "い"
             dictionaryType = LETTER
             cells {
                 +Cell12
             }
         }
         symbol {
-            textRepresented = "c"
+            textRepresented = "う"
             dictionaryType = LETTER
             cells {
                 +Cell14
             }
         }
         symbol {
-            textRepresented = "d"
-            dictionaryType = LETTER
-            cells {
-                +Cell145
-            }
-        }
-        symbol {
-            textRepresented = "e"
-            dictionaryType = LETTER
-            cells {
-                +Cell15
-            }
-        }
-        symbol {
-            textRepresented = "f"
+            textRepresented = "え"
             dictionaryType = LETTER
             cells {
                 +Cell124
             }
         }
         symbol {
-            textRepresented = "g"
-            dictionaryType = LETTER
-            cells {
-                +Cell1245
-            }
-        }
-        symbol {
-            textRepresented = "h"
-            dictionaryType = LETTER
-            cells {
-                +Cell125
-            }
-        }
-        symbol {
-            textRepresented = "i"
+            textRepresented = "お"
             dictionaryType = LETTER
             cells {
                 +Cell24
             }
         }
         symbol {
-            textRepresented = "j"
+            textRepresented = "か"
             dictionaryType = LETTER
             cells {
-                +Cell245
+                +Cell16
             }
         }
         symbol {
-            textRepresented = "k"
+            textRepresented = "き"
             dictionaryType = LETTER
             cells {
-                +Cell13
+                +Cell126
             }
         }
         symbol {
-            textRepresented = "l"
+            textRepresented = "く"
             dictionaryType = LETTER
             cells {
-                +Cell123
+                +Cell146
             }
         }
         symbol {
-            textRepresented = "m"
+            textRepresented = "け"
             dictionaryType = LETTER
             cells {
-                +Cell134
+                +Cell1246
             }
         }
         symbol {
-            textRepresented = "n"
+            textRepresented = "こ"
             dictionaryType = LETTER
             cells {
-                +Cell1345
+                +Cell246
             }
         }
         symbol {
-            textRepresented = "o"
+            textRepresented = "さ"
             dictionaryType = LETTER
             cells {
-                +Cell135
+                +Cell156
             }
         }
         symbol {
-            textRepresented = "p"
+            textRepresented = "し"
             dictionaryType = LETTER
             cells {
-                +Cell1234
+                +Cell1256
             }
         }
         symbol {
-            textRepresented = "q"
+            textRepresented = "す"
             dictionaryType = LETTER
             cells {
-                +Cell12345
+                +Cell1456
             }
         }
         symbol {
-            textRepresented = "r"
+            textRepresented = "せ"
             dictionaryType = LETTER
             cells {
-                +Cell1235
+                +Cell12456
             }
         }
         symbol {
-            textRepresented = "s"
-            dictionaryType = LETTER
-            cells {
-                +Cell234
-            }
-        }
-        symbol {
-            textRepresented = "t"
-            dictionaryType = LETTER
-            cells {
-                +Cell2345
-            }
-        }
-        symbol {
-            textRepresented = "u"
-            dictionaryType = LETTER
-            cells {
-                +Cell136
-            }
-        }
-        symbol {
-            textRepresented = "v"
-            dictionaryType = LETTER
-            cells {
-                +Cell1236
-            }
-        }
-        symbol {
-            textRepresented = "w"
+            textRepresented = "そ"
             dictionaryType = LETTER
             cells {
                 +Cell2456
             }
         }
         symbol {
-            textRepresented = "x"
+            textRepresented = "た"
+            dictionaryType = LETTER
+            cells {
+                +Cell135
+            }
+        }
+        symbol {
+            textRepresented = "ち"
+            dictionaryType = LETTER
+            cells {
+                +Cell1235
+            }
+        }
+        symbol {
+            textRepresented = "つ"
+            dictionaryType = LETTER
+            cells {
+                +Cell1345
+            }
+        }
+        symbol {
+            textRepresented = "て"
+            dictionaryType = LETTER
+            cells {
+                +Cell12345
+            }
+        }
+        symbol {
+            textRepresented = "と"
+            dictionaryType = LETTER
+            cells {
+                +Cell2345
+            }
+        }
+        symbol {
+            textRepresented = "な"
+            dictionaryType = LETTER
+            cells {
+                +Cell13
+            }
+        }
+        symbol {
+            textRepresented = "に"
+            dictionaryType = LETTER
+            cells {
+                +Cell123
+            }
+        }
+        symbol {
+            textRepresented = "ぬ"
+            dictionaryType = LETTER
+            cells {
+                +Cell134
+            }
+        }
+        symbol {
+            textRepresented = "ね"
+            dictionaryType = LETTER
+            cells {
+                +Cell1234
+            }
+        }
+        symbol {
+            textRepresented = "の"
+            dictionaryType = LETTER
+            cells {
+                +Cell234
+            }
+        }
+        symbol {
+            textRepresented = "は"
+            dictionaryType = LETTER
+            cells {
+                +Cell136
+            }
+        }
+        symbol {
+            textRepresented = "ひ"
+            dictionaryType = LETTER
+            cells {
+                +Cell1236
+            }
+        }
+        symbol {
+            textRepresented = "ふ"
             dictionaryType = LETTER
             cells {
                 +Cell1346
             }
         }
         symbol {
-            textRepresented = "y"
+            textRepresented = "へ"
+            dictionaryType = LETTER
+            cells {
+                +Cell12346
+            }
+        }
+        symbol {
+            textRepresented = "ほ"
+            dictionaryType = LETTER
+            cells {
+                +Cell2346
+            }
+        }
+        symbol {
+            textRepresented = "ま"
+            dictionaryType = LETTER
+            cells {
+                +Cell1356
+            }
+        }
+        symbol {
+            textRepresented = "み"
+            dictionaryType = LETTER
+            cells {
+                +Cell12356
+            }
+        }
+        symbol {
+            textRepresented = "む"
             dictionaryType = LETTER
             cells {
                 +Cell13456
             }
         }
         symbol {
-            textRepresented = "z"
+            textRepresented = "め"
             dictionaryType = LETTER
             cells {
-                +Cell1356
+                +Cell123456
+            }
+        }
+        symbol {
+            textRepresented = "も"
+            dictionaryType = LETTER
+            cells {
+                +Cell23456
+            }
+        }
+        symbol {
+            textRepresented = "ん"
+            dictionaryType = LETTER
+            cells {
+                +Cell356
+            }
+        }
+        symbol {
+            textRepresented = "や"
+            dictionaryType = LETTER
+            cells {
+                +Cell34
+            }
+        }
+        symbol {
+            textRepresented = "ゆ"
+            dictionaryType = LETTER
+            cells {
+                +Cell346
+            }
+        }
+        symbol {
+            textRepresented = "よ"
+            dictionaryType = LETTER
+            cells {
+                +Cell345
+            }
+        }
+        symbol {
+            textRepresented = "ら"
+            dictionaryType = LETTER
+            cells {
+                +Cell15
+            }
+        }
+        symbol {
+            textRepresented = "り"
+            dictionaryType = LETTER
+            cells {
+                +Cell125
+            }
+        }
+        symbol {
+            textRepresented = "る"
+            dictionaryType = LETTER
+            cells {
+                +Cell145
+            }
+        }
+        symbol {
+            textRepresented = "れ"
+            dictionaryType = LETTER
+            cells {
+                +Cell1245
+            }
+        }
+        symbol {
+            textRepresented = "ろ"
+            dictionaryType = LETTER
+            cells {
+                +Cell245
+            }
+        }
+        symbol {
+            textRepresented = "わ"
+            dictionaryType = LETTER
+            cells {
+                +Cell3
+            }
+        }
+        symbol {
+            textRepresented = "ゐ"
+            dictionaryType = LETTER
+            cells {
+                +Cell23
+            }
+        }
+        symbol {
+            textRepresented = "ゑ"
+            dictionaryType = LETTER
+            cells {
+                +Cell235
+            }
+        }
+        symbol {
+            textRepresented = "を"
+            dictionaryType = LETTER
+            cells {
+                +Cell35
             }
         }
         symbol {
@@ -480,7 +649,16 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_LETTERS_REP
         }
         symbol {
-            textRepresented = "but"
+            textRepresented = "a"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell1
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "i"
             dictionaryType = WORDSIGN
             cells {
                 +Cell12
@@ -489,7 +667,7 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "can"
+            textRepresented = "u"
             dictionaryType = WORDSIGN
             cells {
                 +Cell14
@@ -498,25 +676,7 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "do"
-            dictionaryType = WORDSIGN
-            cells {
-                +Cell145
-            }
-            ruleForUsage = STANDALONE
-            onEntryClickType = SHOW_USAGE_RULE
-        }
-        symbol {
-            textRepresented = "every"
-            dictionaryType = WORDSIGN
-            cells {
-                +Cell15
-            }
-            ruleForUsage = STANDALONE
-            onEntryClickType = SHOW_USAGE_RULE
-        }
-        symbol {
-            textRepresented = "from"
+            textRepresented = "e"
             dictionaryType = WORDSIGN
             cells {
                 +Cell124
@@ -525,91 +685,91 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "go"
+            textRepresented = "o"
             dictionaryType = WORDSIGN
             cells {
-                +Cell1245
+                +Cell24
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "have"
+            textRepresented = "ka"
             dictionaryType = WORDSIGN
             cells {
-                +Cell125
+                +Cell16
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "just"
+            textRepresented = "ki"
             dictionaryType = WORDSIGN
             cells {
-                +Cell245
+                +Cell126
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "knowledge"
+            textRepresented = "ku"
             dictionaryType = WORDSIGN
             cells {
-                +Cell13
+                +Cell146
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "like"
+            textRepresented = "ke"
             dictionaryType = WORDSIGN
             cells {
-                +Cell123
+                +Cell1246
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "more"
+            textRepresented = "ko"
             dictionaryType = WORDSIGN
             cells {
-                +Cell134
+                +Cell246
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "not"
+            textRepresented = "sa"
             dictionaryType = WORDSIGN
             cells {
-                +Cell1345
+                +Cell156
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "people"
+            textRepresented = "shi"
             dictionaryType = WORDSIGN
             cells {
-                +Cell1234
+                +Cell1256
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "quite"
+            textRepresented = "su"
             dictionaryType = WORDSIGN
             cells {
-                +Cell12345
+                +Cell1456
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "rather"
+            textRepresented = "se"
             dictionaryType = WORDSIGN
             cells {
-                +Cell1235
+                +Cell12456
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
@@ -618,13 +778,49 @@ class BrailleDatabaseKana : BrailleDatabase()
             textRepresented = "so"
             dictionaryType = WORDSIGN
             cells {
-                +Cell234
+                +Cell2456
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "that"
+            textRepresented = "ta"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell135
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "chi"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell1235
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "tsu"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell1345
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "te"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell12345
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "to"
             dictionaryType = WORDSIGN
             cells {
                 +Cell2345
@@ -633,7 +829,52 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "us"
+            textRepresented = "na"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell13
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ni"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell123
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "nu"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell134
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ne"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell1234
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "no"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell234
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ha"
             dictionaryType = WORDSIGN
             cells {
                 +Cell136
@@ -642,7 +883,7 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "very"
+            textRepresented = "hi"
             dictionaryType = WORDSIGN
             cells {
                 +Cell1236
@@ -651,16 +892,7 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "will"
-            dictionaryType = WORDSIGN
-            cells {
-                +Cell2456
-            }
-            ruleForUsage = STANDALONE
-            onEntryClickType = SHOW_USAGE_RULE
-        }
-        symbol {
-            textRepresented = "it"
+            textRepresented = "fu"
             dictionaryType = WORDSIGN
             cells {
                 +Cell1346
@@ -669,7 +901,43 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "you"
+            textRepresented = "he"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell12346
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ho"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell2346
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ma"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell1356
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "mi"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell12356
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "mu"
             dictionaryType = WORDSIGN
             cells {
                 +Cell13456
@@ -678,10 +946,136 @@ class BrailleDatabaseKana : BrailleDatabase()
             onEntryClickType = SHOW_USAGE_RULE
         }
         symbol {
-            textRepresented = "as"
+            textRepresented = "me"
             dictionaryType = WORDSIGN
             cells {
-                +Cell1356
+                +Cell123456
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "mo"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell23456
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "n"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell356
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ya"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell34
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "yu"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell346
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "yo"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell345
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ra"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell15
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ri"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell125
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ru"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell145
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "re"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell1245
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "ro"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell245
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "wa"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell3
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "wi"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell23
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "we"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell235
+            }
+            ruleForUsage = STANDALONE
+            onEntryClickType = SHOW_USAGE_RULE
+        }
+        symbol {
+            textRepresented = "wo"
+            dictionaryType = WORDSIGN
+            cells {
+                +Cell35
             }
             ruleForUsage = STANDALONE
             onEntryClickType = SHOW_USAGE_RULE

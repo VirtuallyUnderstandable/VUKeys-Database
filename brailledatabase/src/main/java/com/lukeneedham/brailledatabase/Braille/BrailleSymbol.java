@@ -2,6 +2,7 @@ package com.lukeneedham.brailledatabase.Braille;
 
 import android.content.Context;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,26 +11,26 @@ import java.util.List;
  */
 public class BrailleSymbol
 {
-    private final BrailleCellDatabaseEntry[] cells;
+    private final BrailleCell[] cells;
 
-    public BrailleSymbol(BrailleCellDatabaseEntry... cellsIn)
+    public BrailleSymbol(BrailleCell... cellsIn)
     {
         cells = cellsIn;
     }
 
-    public BrailleSymbol(List<BrailleCellDatabaseEntry> cellsIn)
+    public BrailleSymbol(List<BrailleCell> cellsIn)
     {
-        cells = cellsIn.toArray(new BrailleCellDatabaseEntry[cellsIn.size()]);
+        cells = cellsIn.toArray(new BrailleCell[cellsIn.size()]);
     }
 
-    public BrailleCellDatabaseEntry[] getCells()
+    public BrailleCell[] getCells()
     {
         return cells;
     }
 
     public boolean equals(BrailleSymbol bc)
     {
-        BrailleCellDatabaseEntry[] otherCells = bc.getCells();
+        BrailleCell[] otherCells = bc.getCells();
         if (otherCells.length == cells.length)
         {
             for (int i = 0; i < otherCells.length; i++)
@@ -47,7 +48,7 @@ public class BrailleSymbol
     public String getDotsDescription(Context c)
     {
         String res = "";
-        for(BrailleCellDatabaseEntry bc : cells)
+        for(BrailleCell bc : cells)
         {
 			if(bc != null)
 			{
@@ -60,7 +61,7 @@ public class BrailleSymbol
     public String getFont()
     {
         StringBuilder res = new StringBuilder();
-		for (BrailleCellDatabaseEntry cell : cells)
+		for (BrailleCell cell : cells)
 		{
 			if (cell == null)
 			{
@@ -77,7 +78,7 @@ public class BrailleSymbol
     public String getUnicodeCellSymbol()
 	{
 		StringBuilder res = new StringBuilder();
-		for (BrailleCellDatabaseEntry cell : cells)
+		for (BrailleCell cell : cells)
 		{
 			if (cell == null)
 			{

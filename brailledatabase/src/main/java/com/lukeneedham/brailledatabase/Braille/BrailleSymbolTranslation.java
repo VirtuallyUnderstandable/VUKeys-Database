@@ -70,7 +70,7 @@ public class BrailleSymbolTranslation
 		int count = 0;
 		for (int brailleSymbolDateEntryPos = 0; brailleSymbolDateEntryPos < translation.size(); brailleSymbolDateEntryPos++)
 		{
-			BrailleCellDatabaseEntry[] cellsInEntry = translation.get(brailleSymbolDateEntryPos).getCells();
+			BrailleCell[] cellsInEntry = translation.get(brailleSymbolDateEntryPos).getCells();
 			for (int brailleSymbolCellPos = 0; brailleSymbolCellPos < cellsInEntry.length; brailleSymbolCellPos++)
 			{
 				count++;
@@ -173,13 +173,13 @@ public class BrailleSymbolTranslation
 		return tran.toString();
 	}
 
-	public List<BrailleCellDatabaseEntry> getCells()
+	public List<BrailleCell> getCells()
 	{
-		ArrayList<BrailleCellDatabaseEntry> cells = new ArrayList<>();
+		ArrayList<BrailleCell> cells = new ArrayList<>();
 
 		for (BrailleSymbolDatabaseEntry data : translation)
 		{
-			BrailleCellDatabaseEntry[] currentCells = data.getCells();
+			BrailleCell[] currentCells = data.getCells();
 			if (currentCells != null)
 			{
 				cells.addAll(Arrays.asList(currentCells));
@@ -189,13 +189,13 @@ public class BrailleSymbolTranslation
 		return cells;
 	}
 
-	public List<List<BrailleCellDatabaseEntry>> getNestedCells()
+	public List<List<BrailleCell>> getNestedCells()
 	{
-		List<List<BrailleCellDatabaseEntry>> cells = new ArrayList<>();
+		List<List<BrailleCell>> cells = new ArrayList<>();
 
 		for (BrailleSymbolDatabaseEntry data : translation)
 		{
-			BrailleCellDatabaseEntry[] currentCells = data.getCells();
+			BrailleCell[] currentCells = data.getCells();
 			if (currentCells != null)
 			{
 				cells.add(Arrays.asList(currentCells));
@@ -213,18 +213,6 @@ public class BrailleSymbolTranslation
 			tran.append(data.getTextRepresented());
 		}
 		return tran.toString();
-	}
-
-	public List<BrailleSymbolTranslation> getWordTranslationsRemovingWordSeparators(BrailleDatabase database) {
-		List<BrailleSymbolTranslation> wordTranslations = splitTranslationByWordSeparators(database);
-		List<BrailleSymbolTranslation> wordTranslationsWithoutWordSeparators = new ArrayList<>();
-		for(BrailleSymbolTranslation wordTranslation : wordTranslations) {
-			boolean wordIsOnlyWordSeparators = wordTranslation.containsOnlyWordSeparators(database);
-			if(!wordIsOnlyWordSeparators) {
-				wordTranslationsWithoutWordSeparators.add(wordTranslation);
-			}
-		}
-		return wordTranslationsWithoutWordSeparators;
 	}
 
 	public List<BrailleSymbolTranslation> getWordTranslations(BrailleDatabase database) {
@@ -260,15 +248,6 @@ public class BrailleSymbolTranslation
 		}
 
 		return words;
-	}
-
-	private boolean containsOnlyWordSeparators(BrailleDatabase database) {
-		for(BrailleSymbolDatabaseEntry item : translation) {
-			if(!database.isWordSeparator(item)) {
-				return false;
-			}
-		}
-		return true;
 	}
 
 	/**

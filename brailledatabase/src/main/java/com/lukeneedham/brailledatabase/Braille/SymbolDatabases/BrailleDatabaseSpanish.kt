@@ -27,7 +27,7 @@ class BrailleDatabaseSpanish : BrailleDatabase()
      * make the array of all the entries in the database
      * for each entry, make a new BrailleSymbolDatabaseEntry object, and pass the relevant paramaters
      * the available BrailleSymbolDatabaseEntry constructors and neccessary paramaters can be seen in BrailleSymbolDatabaseEntry.java
-     * the last paramter is BrailleCellDatabaseEntry... (ie varargs of BrailleCells, more here: http://stackoverflow.com/questions/1656901/varargs-and-the-argument if you need it)
+     * the last paramter is BrailleCell... (ie varargs of BrailleCells, more here: http://stackoverflow.com/questions/1656901/varargs-and-the-argument if you need it)
      * the cells are named after what they mean alone in UEB - cells with no independent meaning are named like 'Cell456' - the names be looked up with the search function in the app, or in BrailleCellDatabase.java
      */
 
@@ -346,19 +346,19 @@ class BrailleDatabaseSpanish : BrailleDatabase()
             }
         }
         symbol {
-            textRepresented = ","
+            textRepresented = "."
             dictionaryType = NUMBER
             cells {
-                +Cell2
+                +Cell256
             }
             descriptiveNameRes = R.string.braille_decimal_point
             onEntryClickType = SHOW_LETTERS_REP
         }
         symbol {
-            textRepresented = "."
+            textRepresented = ","
             dictionaryType = NUMBER
             cells {
-                +Cell3
+                +Cell2
             }
             descriptiveNameRes = R.string.braille_thousands_separator
             onEntryClickType = SHOW_LETTERS_REP

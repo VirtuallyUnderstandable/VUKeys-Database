@@ -69,22 +69,6 @@
 
     <issue
         id="SuspiciousIndentation"
-        message="Suspicious indentation: This is indented but is not nested under the previous expression (`if(dotsOn.equals(&quot;&quot;)`...)"
-        errorLine1="        return &quot;Cell&quot; + dotsOn;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleCell.java"
-            line="82"
-            column="9"/>
-        <location
-            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleCell.java"
-            line="81"
-            column="6"
-            message="Previous statement here"/>
-    </issue>
-
-    <issue
-        id="SuspiciousIndentation"
         message="The indentation string here is different from on the previous line (`&quot; &quot;` vs `\t`)"
         errorLine1="  if(res.equals(&quot;&quot;))"
         errorLine2="~~">
@@ -102,22 +86,22 @@
     <issue
         id="GradleDependency"
         message="A newer version of junit:junit than 4.12 is available: 4.13.2"
-        errorLine1=""
+        errorLine1="    testImplementation &apos;junit:junit:4.12&apos;"
         errorLine2="                       ~~~~~~~~~~~~~~~~~~">
         <location
             file="build.gradle"
-            line="32"
+            line="35"
             column="24"/>
     </issue>
 
     <issue
         id="GradleDependency"
         message="A newer version of org.jetbrains.kotlin:kotlin-stdlib-jdk7 than 1.7.0 is available: 1.9.0"
-        errorLine1="    testImplementation &apos;junit:junit:4.12&apos;"
+        errorLine1="    implementation &quot;org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version&quot;"
         errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="build.gradle"
-            line="35"
+            line="38"
             column="20"/>
     </issue>
 
