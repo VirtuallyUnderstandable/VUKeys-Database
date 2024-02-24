@@ -24,6 +24,8 @@
 	<string name="database_spanish">Spanish</string>
 	<string name="database_spanish_desc">Standard for Spanish</string>
 
+	<string name="database_kana">Kana</string>
+	<string name="database_kana_desc">Standard for Kana</string>
 
 	<string name="braille_number_sign">Number Sign</string>
 	<string name="braille_decimal_point">Decimal Point</string>
