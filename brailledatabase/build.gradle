@@ -3,10 +3,10 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace = "com.lukeneedham.brailledatabase"
-    compileSdkVersion 28
+    compileSdkVersion 30
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -21,8 +21,8 @@ android {
         }
     }
     compileOptions {
-        targetCompatibility 1.8
-        sourceCompatibility 1.8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
@@ -37,3 +37,5 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+
