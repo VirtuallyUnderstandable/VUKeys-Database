@@ -44,7 +44,7 @@ repositories {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.lukeneedham.brailledatabase'
+            groupId = 'com.github.poseiso'
             artifactId = 'VUKeys-Database'
             version = '1.0.17'
             artifact("$buildDir/outputs/aar/brailledatabase-release.aar")
