@@ -46,7 +46,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.lukeneedham.brailledatabase'
             artifactId = 'VUKeys-Database'
-            version = '1.0.16'
+            version = '1.0.17'
             artifact("$buildDir/outputs/aar/brailledatabase-release.aar")
         }
     }
