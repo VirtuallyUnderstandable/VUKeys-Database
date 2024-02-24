@@ -43,11 +43,12 @@ repositories {
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        release(MavenPublication) {
             groupId = 'com.lukeneedham.brailledatabase'
             artifactId = 'library'
-            version = '1.0.14'
+            version = '1.0.16'
             artifact("$buildDir/outputs/aar/brailledatabase-release.aar")
         }
     }
 }
+
