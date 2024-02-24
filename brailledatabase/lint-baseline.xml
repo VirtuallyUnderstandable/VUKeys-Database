@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.2.2" type="baseline" client="gradle" dependencies="false" name="AGP (8.2.2)" variant="all" version="8.2.2">
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="        `in` = `in`.toLowerCase()"
+        errorLine2="                    ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/SymbolDatabases/BrailleDatabase.kt"
+            line="138"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            if (symbols[i].getDescriptiveName(c)!!.toLowerCase() == `in`)"
+        errorLine2="                                                   ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/SymbolDatabases/BrailleDatabase.kt"
+            line="141"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="    symbolTranslation = symbolTranslation.toUpperCase();"
+        errorLine2="                                          ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleSymbolTranslation.java"
+            line="307"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="    input = input.toLowerCase();"
+        errorLine2="                  ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleTranslator.java"
+            line="141"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="    input = input.substring(0, start) + input.substring(start, start + 1).toLowerCase() + input.substring(start + 1, input.length());"
+        errorLine2="                                                                          ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleTranslator.java"
+            line="146"
+            column="75"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        errorLine1="        targetSdkVersion 33"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SuspiciousIndentation"
+        message="Suspicious indentation: This is indented but is not nested under the previous expression (`if(dotsOn.equals(&quot;&quot;)`...)"
+        errorLine1="        return &quot;Cell&quot; + dotsOn;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleCell.java"
+            line="82"
+            column="9"/>
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleCell.java"
+            line="81"
+            column="6"
+            message="Previous statement here"/>
+    </issue>
+
+    <issue
+        id="SuspiciousIndentation"
+        message="The indentation string here is different from on the previous line (`&quot; &quot;` vs `\t`)"
+        errorLine1="  if(res.equals(&quot;&quot;))"
+        errorLine2="~~">
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleCell.java"
+            line="54"
+            column="1"/>
+        <location
+            file="src/main/java/com/lukeneedham/brailledatabase/Braille/BrailleCell.java"
+            line="49"
+            column="1"
+            message="Previous line indentation here"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of junit:junit than 4.12 is available: 4.13.2"
+        errorLine1=""
+        errorLine2="                       ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="32"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin:kotlin-stdlib-jdk7 than 1.7.0 is available: 1.9.0"
+        errorLine1="    testImplementation &apos;junit:junit:4.12&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="35"
+            column="20"/>
+    </issue>
+
+</issues>
