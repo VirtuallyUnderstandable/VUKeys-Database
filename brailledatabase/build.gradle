@@ -22,8 +22,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     lint {
         baseline = file("lint-baseline.xml")
@@ -46,7 +46,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.lukeneedham.brailledatabase'
             artifactId = 'VUKeys-Database'
-            version = '1.0.15'
+            version = '1.0.16'
             artifact("$buildDir/outputs/aar/brailledatabase-release.aar")
         }
     }
