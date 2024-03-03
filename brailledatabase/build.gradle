@@ -44,8 +44,7 @@ afterEvaluate {
             mavenJava(MavenPublication) {
                 groupId = 'com.github.poseiso'
                 artifactId = 'VUKeys-Database'
-                version = '1.0.25'
-                //artifact("$buildDir/outputs/aar/brailledatabase-release.aar")
+                version = '1.0.26'
                 from components.release
             }
         }
