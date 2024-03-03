@@ -133,12 +133,11 @@ abstract class BrailleDatabase
 
     fun findSymbolDataByDescription(`in`: String, c: Context): List<BrailleSymbolDatabaseEntry>
     {
-        var `in` = `in`
         val res = ArrayList<BrailleSymbolDatabaseEntry>()
-        `in` = `in`.toLowerCase()
+        var iin = `in`.lowercase()
         for (i in 0 until symbols.size)
         {
-            if (symbols[i].getDescriptiveName(c)!!.toLowerCase() == `in`)
+            if (symbols[i].getDescriptiveName(c)!!.lowercase() == iin)
             {
                 res.add(symbols[i])
             }
